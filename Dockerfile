@@ -15,4 +15,5 @@ RUN git clone https://github.com/anpisolutions/chatterbot.git
 WORKDIR chatterbot
 RUN pip install -r requirements.txt
 
-RUN python app.py
+ENTRYPOINT ["python"]
+CMD ["app.py"]
